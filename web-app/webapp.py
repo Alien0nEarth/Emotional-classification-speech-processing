@@ -165,7 +165,7 @@ def extract_features(audio, sample_rate):
 
 
 # --- Streamlit App -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-def main():
+def app():
     # App header
     st.markdown('<h1 class="title">🎤 Speech Emotion Analyzer</h1>', unsafe_allow_html=True)
     
@@ -292,4 +292,4 @@ def main():
                 st.markdown('</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
-    main()
+    app()
