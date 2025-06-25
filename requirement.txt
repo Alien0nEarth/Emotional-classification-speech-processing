@@ -1,5 +1,6 @@
 streamlit
 torch==2.7.1
+torch-scatter
 torchaudio
 numpy
 librosa
