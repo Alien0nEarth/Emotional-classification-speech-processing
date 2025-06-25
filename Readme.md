@@ -98,13 +98,13 @@ Input Shape: [1, 1, 9, 18]  # channels x features
 
 | Metric           | Value     |
 | ---------------- | --------- |
-| Accuracy         | **74.61%**|
+| Accuracy         | **73.52%**|
 | F1 Score         | 75.0%     |
-| Lowest Class Acc | 67.0%     |
+| Lowest Class Acc | 65.0%     |
 
 > Trained on 80-20 split of RAVDESS using AdamW optimizer
 
-## ------------------------Dropping class 06:Fear-------------------------------------------------------------
+## Dropping class 05: NEUTRAL
 Clearly  the class 05: NEUTRAL has very low accuracy as well as f1 score, reducing the  overall accuracy of the model,
 Hence,We will drop the  NEUTRAL class  and again train the model with num_classes=7
 
@@ -129,11 +129,13 @@ Hence,We will drop the  NEUTRAL class  and again train the model with num_classe
 weighted avg       0.74      0.74      0.73       491
 
 
+
 | Metric           | Value     |
 | ---------------- | --------- |
-| Accuracy         | **73.52%**|
+| Accuracy         | **74.61%**|
 | F1 Score         | 75.0%     |
-| Lowest Class Acc | 65.0%     |
+| Lowest Class Acc | 67.0%     |
+
 
 
 **Emotion Count:**
