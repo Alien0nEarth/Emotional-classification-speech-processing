@@ -122,8 +122,8 @@ class CNNLSTM(torch.nn.Module):
 
 
 # Emotion mapping
-EMOTION_LABELS = ['calm', 'happy', 'sad', 'angry', 'fear', 'disgust', 'surprise']
-EMOTION_EMOJIS = ['😌', '😄', '😔', '😠', '😨', '🤢', '😲']
+EMOTION_LABELS =['angry','calm','disgust','fear','happy','sad','surprise']
+EMOTION_EMOJIS = ['😠','😌','🤢','😨','😄','😔','😲']
 
 # --- Feature Extraction -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #defining extract_features to extract various features
