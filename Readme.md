@@ -98,43 +98,42 @@ Input Shape: [1, 1, 9, 18]  # channels x features
 
 | Metric           | Value     |
 | ---------------- | --------- |
-| Accuracy         | **71.28%**|
-| F1 Score         | 71.0%     |
-| Lowest Class Acc | 54.0%     |
+| Accuracy         | **74.61%**|
+| F1 Score         | 75.0%     |
+| Lowest Class Acc | 67.0%     |
 
 > Trained on 80-20 split of RAVDESS using AdamW optimizer
 
 ## ------------------------Dropping class 06:Fear-------------------------------------------------------------
-Clearly  the class 06 has very low accuracy as well as f1 score, reducing the  overall accuracy of the model,
-Hence,We will drop the class 06 and again train the model with num_classes=7
+Clearly  the class 05: NEUTRAL has very low accuracy as well as f1 score, reducing the  overall accuracy of the model,
+Hence,We will drop the  NEUTRAL class  and again train the model with num_classes=7
 
 **Data Preprocessing and Feature Extraction with new class_set**
 **Re-trained the model adjusting hyperparams**
 
 ##  Final Model Performance
-
  Classification Report:
               precision    recall  f1-score   support
 
-           0       0.84      0.83      0.83        75
-           1       0.88      0.91      0.89        75
-           2       0.62      0.85      0.72        39
-           3       0.85      0.77      0.81        75
-           4       0.84      0.61      0.71        75
-           5       0.72      0.89      0.80        38
-           6       0.71      0.77      0.74        39
+           0       0.82      0.83      0.82        75
+           1       0.89      0.83      0.86        75
+           2       0.66      0.69      0.68        39
+           3       0.71      0.61      0.66        75
+           4       0.71      0.67      0.69        75
+           5       0.68      0.89      0.77        38
+           6       0.69      0.63      0.66        75
+           7       0.65      0.85      0.73        39
 
-    accuracy                           0.80       416
-   macro avg       0.78      0.80      0.79       416
-weighted avg       0.81      0.80      0.79       416
+    accuracy                           0.74       491
+   macro avg       0.73      0.75      0.73       491
+weighted avg       0.74      0.74      0.73       491
+
 
 | Metric           | Value     |
 | ---------------- | --------- |
-| Accuracy         | **79.57%**|
-| F1 Score         | 79.0%     |
-| Lowest Class Acc | 62.0%     |
-
-Only one class found below 70%. 
+| Accuracy         | **73.52%**|
+| F1 Score         | 75.0%     |
+| Lowest Class Acc | 65.0%     |
 
 
 **Emotion Count:**
@@ -204,7 +203,7 @@ Then enter a `.wav` file path when prompted in the terminal.
 
 ## Web App Usage
 
-> [Launch App](https://speech-emotion-recognition-vansh-187.streamlit.app/)
+> [Launch App]()
 
 1. Upload your `.wav` file
 2. Wait for real-time waveform + emotion prediction
@@ -265,6 +264,6 @@ Emotional-classification-speech-processing/
 
 ## Credits
 
-Developed by **\[Your Name]** ([@yourhandle](https://github.com/yourhandle)) as part of an applied ML project.
+Developed by **NIKHIL RAJ** ([@Alien0nEarth](https://github.com/Alien0nEarth)) as part of an applied ML project.
 
 Special thanks to RAVDESS creators and open-source contributors!
