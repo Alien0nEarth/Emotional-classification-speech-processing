@@ -1,6 +1,7 @@
 streamlit
-torch==2.7.1
+-f https://data.pyg.org/whl/torch-1.13.0+cpu.html
 torch-scatter
+torch==2.7.1
 torchaudio
 numpy
 librosa
