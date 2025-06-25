@@ -144,7 +144,11 @@ Only one class found below 70%.
 ![Confusion Matrix](img/Confusion_matrix.png)
 
 **Model Accuracy and Loss:**
+<<<<<<< HEAD
 ! [Accuracy_Loss](img/Model_accuracy_loss.png)
+=======
+![Accuracy_Loss](img/Model_accuracy_loss.png)
+>>>>>>> 512473cc8904c6f5791a06415d204e28e7257cd0
 ---
 
 
